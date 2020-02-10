@@ -25,7 +25,7 @@ export class CreateEditContactComponent {
   constructor(private store: Store<AppState>) { }
 
   onSubmit() {
-    this.store.dispatch(new ContactsActions.AddContact(this.contactForm.value));
+    this.store.dispatch(new ContactsActions.AddEditContact(this.contactForm.value));
     this.contactForm.reset();
   }
 

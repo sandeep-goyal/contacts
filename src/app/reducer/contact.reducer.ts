@@ -12,7 +12,7 @@ const initialState: Contacts = {
 
 export function contactReducer  (state: Contacts[] = [initialState], action: ContactsActions.Actions){
     switch (action.type) {
-        case ContactsActions.Add_CONTACT: 
+        case ContactsActions.Add_EDIT_CONTACT: 
         if(action.payload.index !== null){
             state[action.payload.index] = action.payload;
             return state;     
